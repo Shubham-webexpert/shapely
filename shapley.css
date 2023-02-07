@@ -1,0 +1,866 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS FOR BODY */
+
+body {
+  background-image: url("https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-position-x: 100%;
+    background-position-y: 100%; */
+  background-size: 100%;
+}
+
+/* CSS FOR NAV BAR CONTAINER */
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:fixed;
+  margin-top: -15%;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: #8c979e;
+  background-color: #ffff;
+  font-size: 14px;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  padding: 10px 0px;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+  /* position: fixed; */
+}
+
+/* CSS FOR LOGO TEXT */
+
+.left-nav {
+  width: 161.53px;
+  height: 56px;
+  margin-top: 20px;
+}
+
+.left-nav span {
+  width: 161.53px;
+  height: 29px;
+  color: #66666666;
+  font-size: 22px;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+/* CSS FOR MENU NAVBAR */
+
+.right-nav {
+  width: 459px;
+  height: 55px;
+  padding: 20px;
+}
+
+nav ul {
+  /* display: grid;
+    grid-template-columns: auto auto auto  auto auto auto;
+    grid-column-gap: 15px; */
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+nav li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+nav a {
+  /* justify-content:center; */
+  font-size: 14px;
+  color: #4c4c4c;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+
+/* CSS FOR ABOUT THE TESTS */
+
+select{
+  width: 120px;
+  padding: 5px;
+  text-transform:uppercase;
+  margin-top: -5px;
+  background-color: #fff;
+  border: none;
+  position: relative;
+  cursor: pointer;
+} 
+
+option{
+  background:#f5f5f5;
+  color:#4c4c4c;
+  text-transform: capitalize;
+  position: absolute;
+  cursor: pointer;
+}
+
+select:hover  option{
+  display:block;
+  color: #573bf2;
+}
+
+.demo {
+  background-color: #fff;
+  /* width: 20px; */
+}
+.demo select {
+  border: none;
+  background-color: #fff;
+  width: 100px;
+}
+
+.dropbtn{
+  display: none;
+}
+
+
+/* CSS FOR SEARCH INPUT */
+
+.search {
+  margin-right: 100px;
+  width: 35px;
+  height: 55px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.search button {
+  width: 25px;
+  height: auto;
+  border: none;
+  background-color: #ffff;
+  cursor: pointer;
+  /* position: relative; */
+}
+
+.search-input{
+  position: absolute;
+  right: 13%;
+  top: 20%;
+  background-color: #fff;
+  visibility: hidden;
+  padding: 10px;
+}
+
+
+.search:hover  + .search-input{
+  visibility: visible;
+  animation: search;
+  animation-duration: 2s;
+  animation-timing-function:linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes search{
+  from{top:0%; right: 15%;}
+  to{top: 20%; right: 15%;}
+}
+.search-input input{
+  padding: 15px;
+  text-transform:capitalize;
+  background-color:#f5f5f5;
+  font-size: large;
+}
+.search-input button{
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: #573bf2;
+  font-size: large;
+}
+
+.fa {
+  width: 14px;
+}
+
+ 
+/* CSS FOR MAIN-CONTENT */
+
+.content {
+  min-width: 65%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* margin:230px; */
+  margin-top: 15%;
+  margin-left: 22%;
+  margin-bottom: 15%;
+  position: inherit;
+}
+.button-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 60px;
+  color: #ffff;
+  margin: 0px 0px 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.content p {
+  font-size: 14px;
+  color: #fff;
+  margin: 0px 150px 30px 160px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .readbtn {
+  width: 200px;
+  color: #fff;
+  background: #745cf9;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0px 8px 24px 0px;
+  padding: 13px 26px;
+  border: 2px #745cf9;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.content .readbtn:hover {
+  background-color: #573bf2;
+}
+
+.content .downloadbtn {
+  width: 200px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid white;
+  margin: 0px 8px 24px 0px;
+  padding: 13px 26px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.content .downloadbtn:hover {
+  background-color: #fff;
+  color: #4c4c4c;
+}
+
+
+/* CSS FOR SEO-FRIENDLY */
+
+.seo-friendly {
+  min-width: 200px;
+  padding: 15px 15px;
+  display: flex;
+  background-color: #fff;
+}
+
+.seo-img img {
+  width: 535px;
+  margin-top: 25px;
+}
+.seo-text {
+  /* margin-top: 25%; */
+  margin-top: 30px;
+  margin-left: 50px;
+  text-align: center;
+  color: #8c979e;
+  width: 500px;
+  padding: 10px;
+  line-height: 1.96;
+  text-transform: uppercase;
+}
+.seo-text h3 {
+  color: #4c4c4c;
+  font-weight: lighter;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.seo-text p {
+  font-weight: lighter;
+  font-size: 14px;
+  text-transform: lowercase;
+  justify-content: center;
+  text-align: justify;
+  word-spacing: 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seo-text button {
+  width: 200px;
+  color: #fff;
+  background: #745cf9;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 15px 8px 24px 0px;
+  padding: 13px 26px;
+  border: 2px #745cf9;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.seo-text button:hover {
+  background-color: #573bf2;
+  opacity: 1;
+}
+
+
+/* CSS FOR PORTFOLIO */
+
+.portfolio {
+  background-color: #f5f5f5;
+  display: flex;
+}
+
+.portfolio-text {
+  width: 100%;
+  padding: 10px;
+  margin-top: 80px;
+  margin-left: 50px;
+  line-height: 1.5;
+}
+
+.portfolio-text h3 {
+  color: #4c4c4c;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.portfolio-text p {
+  color: #8c979e;
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-text button {
+  width: 200px;
+  background-color: #745cf9;
+  border: 2px solid #745cf9;
+  color: #ffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 15px 8px 24px 0;
+  padding: 13px 26px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.portfolio-text button:hover {
+  background-color: #573bf2;
+}
+
+.portfolio-img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.portfolio-img img {
+  width: 535px;
+}
+
+
+/* CSS FOR PARALLEX-SECTION */
+
+
+.parallax-section {
+  /* background: transparent; */
+  background-image: url("https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/12/photo-1452723312111-3a7d0db0e024.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  text-align: center;
+  padding: 50px;
+}
+
+.parallax-section h1 {
+  text-transform: capitalize;
+  font-size: 60px;
+  font-weight: lighter;
+  color: #fff;
+  margin: 150px 0px 0px 0px;
+}
+.parallax-section p {
+  font-size: 14px;
+  color: #fff;
+  margin: 20px 140px;
+  display: flex;
+  flex-direction: wrap;
+}
+.parallax-section button {
+  width: 200px;
+  padding: 13px 26px;
+  background-color: #745cf9;
+  border: 2px solid #745cf9;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.parallax-section button:hover {
+  background-color: #573bf2;
+}
+
+ 
+/* CSS FOR NEXT-CONTENT */
+
+
+.next-content {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 100px 120px 5px 150px;
+  justify-content: center;
+}
+.next-content h3 {
+  font-size: 30px;
+  color: #0e1015;
+  font-weight: lighter;
+  text-transform: capitalize;
+  margin: 0 5px 0px 24px;
+}
+.next-content p {
+  font-size: 14px;
+  color: #8c979e;
+  margin: 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.next-content button {
+  width: 200px;
+  padding: 13px 26px;
+  margin: 20px;
+  background-color: #745cf9;
+  border: #745cf9;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.next-content button:hover {
+  background-color: #573bf2;
+}
+
+
+/* CSS FOR MOUNTAIN-IMG */
+
+
+.mountain-img {
+  width: 100%;
+  padding: 0px 200px 0px 200px;
+  background-color: #f5f5f5;
+}
+
+.mountain-img img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* CSS FOR PROJECTS */
+
+
+.latest-projects {
+  background-color: #0e1015;
+  text-align: center;
+  padding: 25px;
+  position: inherit;
+}
+.latest-projects h2 {
+  color: #fff;
+  font-weight: lighter;
+}
+.latest-projects p {
+  color: #fff;
+  margin: 20px;
+}
+
+.project-img {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 30px;
+  width: 49%;
+  position: inherit;
+}
+
+.project-img img {
+  width: 300px;
+  position: inherit;
+  /* z-index: 2 ; */
+}
+
+.project-img h2{
+ /* color: red; */
+ position: absolute;
+ /* z-index: 4; */
+ margin-top:-110px;
+ margin-left: 100px;
+ display: none;
+}
+
+.proimg img:hover{
+  opacity: 0.5;
+}
+  .proimg:hover h2{
+    animation-name: projectTitle;
+    animation-duration:0.5s; 
+    animation-timing-function: ease;
+    display: block;
+}
+
+@keyframes projectTitle{
+  from{
+    margin-top: 0px; margin-left: 100px;}
+    to{
+      margin-top: -110px; margin-left: 100px;    }
+}
+
+
+
+/* CSS FOR CUSTOMERS */
+
+
+.customer-say{
+  background-image: url("https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/12/photo-1451417379553-15d8e8f49cde.jpg");
+   /* background: transparent; */
+   width:100%;
+   height: auto;
+   background-attachment: fixed;
+   padding: 20px;
+}
+
+.customer-say h2{
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight:lighter;
+  padding: 20px;
+  align-items: center;
+}
+
+
+
+.customerinfo{
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  /* width: 50%; */
+  height: auto;
+}
+
+.customerinfo p{
+  display:flex;
+  flex-wrap: wrap;
+  color: #fff;
+  font: 14px;
+  width: 100%;
+  padding: 20px;
+}
+
+.customerinfo img{
+  border-radius: 50%;
+  padding: 20px;
+}
+
+
+.wordpress-text{
+  background-color: #f5f5f5;
+  display: flex;  
+  text-align: center;
+  padding: 100px;
+}
+
+.wordpress-text h2{
+  font-size: 30px;
+}
+
+.wordpress-text button{
+  padding: 10px;
+  width: 200px;
+  text-transform: uppercase;
+  margin-left: 15px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #745cf9;
+  border: none;
+  outline: 2px solid #745cf9;
+  cursor: pointer;
+}
+
+
+
+
+/* CSS FOR FOOTER */
+
+
+.footer{
+  width: 100%;
+  height: 20vh;
+  background-color: #0e1015;
+  color: #fff;
+  padding:50px 10px 10px 10px;
+}
+
+.footer-content{
+  width: 100%  ;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #8c979e;
+  font-weight: bold;
+}
+
+
+.footer a::active{
+  color: #573bf2;
+}
+
+.footer p{
+  font-size: 14px;
+  margin-left: 10px;
+}
+.footer-icons{
+  width:100%;
+  display: flex;
+  justify-content:flex-end;
+  gap: 15px;
+}
+
+ .footer-icons .fa{
+  font-size: 20px;
+  padding: 5px;
+  color: #fff;
+}
+
+.fa:hover{
+  color: #573bf2  ;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:963px){
+  .project-img {
+  width: 100%;
+ }
+ .project-img img{
+  width: 240px;
+ }
+
+ /* .mountain-img img{
+  width: ;
+ } */
+}
+
+@media screen and (max-width:963px) {
+  .nav-container{
+    width: 110%;
+  }
+
+  .content{
+    width: 70%;
+  }
+  .content h1{
+      font-size: 40px;
+  }
+ .seo-friendly, .portfolio{   
+  width: 100% ;
+  text-align: center;
+    /* display: block;  */
+ }
+ .seo-text{
+   width: 70%;
+ }
+ .seo-img img, .portfolio-img img{
+  width: 450px;
+ }
+ .project-img h2{
+  font-size: 15px;
+ }
+ .project-img img{
+  width:100%;
+ }
+}
+
+@media screen and (max-width:935px){
+  .project-img{
+    /* grid-template-columns: auto auto auto; */
+    align-items: center;
+    width: 50%;
+    /* margin-left:110px ; */
+  }
+}
+
+
+@media screen and (max-width:760px){
+  .content h1, .parallax-section h1{
+    font-size: 30px;
+  }
+
+  .content p, .parallax-section p{
+    font-size: 12px;
+    margin: 0px 100px 10px 100px;
+  }
+  .search-input input{
+    padding: 5px;
+    width: 150px;
+    font-size: medium;
+  }
+  .search-input button{
+    padding: 5px;
+    font-size: 14px;
+  }
+  .content{
+    padding-top: 100px;
+    padding-right: 100px;
+  }
+  .content .readbtn,.content .downloadbtn, .seo-text button,.portfolio-text button, .parallax-section button,.next-content button{
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .wordpress-text button{
+    font-size:14px;
+    width: 150px;
+    /* padding:5px 10px; */
+  }
+  .seo-text h3, .portfolio-text h3{
+    font-size: 20px;
+  }
+
+  .seo-text p, .portfolio-text p{
+    font-size: 12px;
+  }
+  .seo-img img, .portfolio-img img{
+    width: 300px;
+    margin-top: 100px;
+  }
+  .parallax-section h1{
+    font-size: 40px;
+  }
+  .parallax-section p{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:705px){
+  .nav-container{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .proimg img{
+    width: 175px;
+  }
+}
+
+@media screen and (max-width:627px){
+  nav::before{
+    content:"";
+    display: none;
+  }
+
+  
+
+   nav ul{
+    /* display: grid; */
+    display: none;
+    position: absolute;
+    background-color:#fff;
+    margin-top: 30px;
+    margin-left: 100px;
+   }
+  
+  
+   .dropbtn{
+    display: block;
+   }
+
+   nav:hover ul{
+    display:grid;
+   }
+
+   .content p, .parallax-section p{
+    margin: 0px 75px 10px 75px;
+   }
+
+   .seo-friendly{
+    padding: 5px;
+   }
+   .seo-text{
+     margin: 0px 0px;
+   }
+   .seo-img{
+    margin: 0;
+   }
+
+   .next-content{
+    padding: 75px 95px 2px 120px;
+   }
+
+  /* .project-img{
+    grid-template-columns: auto auto;
+  } */
+  .proimg img{
+    width: 100%;
+  }
+
+
+  .wordpress-text h2{
+    font-size: 20px;
+  }
+  .wordpress-text button{
+    font-weight: normal;
+    font-size: 12px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width:570px){
+  /* .project-img{
+    grid-template-columns: auto;
+  } */
+  .proimg img{
+    width:100%;
+  }
+}
