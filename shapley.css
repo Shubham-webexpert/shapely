@@ -7,14 +7,6 @@
 
 /* CSS FOR BODY */
 
-body {
-  background-image: url("https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* background-position-x: 100%;
-    background-position-y: 100%; */
-  background-size: 100%;
-}
 
 /* CSS FOR NAV BAR CONTAINER */
 
@@ -23,9 +15,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position:fixed;
-  margin-top: -15%;
 }
+
 nav {
   width: 100%;
   display: flex;
@@ -33,12 +24,10 @@ nav {
   color: #8c979e;
   background-color: #ffff;
   font-size: 14px;
-  /* font-family:Arial, Helvetica, sans-serif; */
   padding: 10px 0px;
   align-items: center;
   justify-content: space-around;
   justify-items: center;
-  /* position: fixed; */
 }
 
 /* CSS FOR LOGO TEXT */
@@ -54,7 +43,6 @@ nav {
   height: 29px;
   color: #66666666;
   font-size: 22px;
-  /* font-family:Arial, Helvetica, sans-serif; */
   font-weight: lighter;
 }
 
@@ -75,9 +63,6 @@ a:hover {
 }
 
 nav ul {
-  /* display: grid;
-    grid-template-columns: auto auto auto  auto auto auto;
-    grid-column-gap: 15px; */
   display: flex;
   justify-content: space-between;
   gap: 15px;
@@ -101,27 +86,27 @@ abbr {
 
 /* CSS FOR ABOUT THE TESTS */
 
-select{
+select {
   width: 120px;
   padding: 5px;
-  text-transform:uppercase;
+  text-transform: uppercase;
   margin-top: -5px;
   background-color: #fff;
   border: none;
   position: relative;
   cursor: pointer;
-} 
+}
 
-option{
-  background:#f5f5f5;
-  color:#4c4c4c;
+option {
+  background: #f5f5f5;
+  color: #4c4c4c;
   text-transform: capitalize;
   position: absolute;
   cursor: pointer;
 }
 
-select:hover  option{
-  display:block;
+select:hover option {
+  display: block;
   color: #573bf2;
 }
 
@@ -129,13 +114,14 @@ select:hover  option{
   background-color: #fff;
   /* width: 20px; */
 }
+
 .demo select {
   border: none;
   background-color: #fff;
   width: 100px;
 }
 
-.dropbtn{
+.dropbtn {
   display: none;
 }
 
@@ -149,6 +135,7 @@ select:hover  option{
   margin-top: 40px;
   cursor: pointer;
 }
+
 .search button {
   width: 25px;
   height: auto;
@@ -158,7 +145,7 @@ select:hover  option{
   /* position: relative; */
 }
 
-.search-input{
+.search-input {
   position: absolute;
   right: 13%;
   top: 20%;
@@ -168,25 +155,34 @@ select:hover  option{
 }
 
 
-.search:hover  + .search-input{
+.search:hover+.search-input {
   visibility: visible;
   animation: search;
-  animation-duration: 2s;
-  animation-timing-function:linear;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 
-@keyframes search{
-  from{top:0%; right: 15%;}
-  to{top: 20%; right: 15%;}
+@keyframes search {
+  from {
+    top: 0%;
+    right: 15%;
+  }
+
+  to {
+    top: 20%;
+    right: 15%;
+  }
 }
-.search-input input{
+
+.search-input input {
   padding: 15px;
-  text-transform:capitalize;
-  background-color:#f5f5f5;
+  text-transform: capitalize;
+  background-color: #f5f5f5;
   font-size: large;
 }
-.search-input button{
+
+.search-input button {
   padding: 15px;
   text-transform: uppercase;
   background-color: #573bf2;
@@ -197,22 +193,25 @@ select:hover  option{
   width: 14px;
 }
 
- 
+
 /* CSS FOR MAIN-CONTENT */
 
 .content {
-  min-width: 65%;
+  background-image: url("https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  width: 100%;
+ min-height:100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  /* margin:230px; */
-  margin-top: 15%;
-  margin-left: 22%;
-  margin-bottom: 15%;
   position: inherit;
 }
+
 .button-section {
   display: flex;
   gap: 20px;
@@ -249,6 +248,7 @@ select:hover  option{
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
 .content .readbtn:hover {
   background-color: #573bf2;
 }
@@ -286,6 +286,7 @@ select:hover  option{
   width: 535px;
   margin-top: 25px;
 }
+
 .seo-text {
   /* margin-top: 25%; */
   margin-top: 30px;
@@ -297,6 +298,7 @@ select:hover  option{
   line-height: 1.96;
   text-transform: uppercase;
 }
+
 .seo-text h3 {
   color: #4c4c4c;
   font-weight: lighter;
@@ -404,6 +406,16 @@ select:hover  option{
   background-size: 100%;
   text-align: center;
   padding: 50px;
+
+
+  max-width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .parallax-section h1 {
@@ -413,6 +425,7 @@ select:hover  option{
   color: #fff;
   margin: 150px 0px 0px 0px;
 }
+
 .parallax-section p {
   font-size: 14px;
   color: #fff;
@@ -420,6 +433,7 @@ select:hover  option{
   display: flex;
   flex-direction: wrap;
 }
+
 .parallax-section button {
   width: 200px;
   padding: 13px 26px;
@@ -432,11 +446,12 @@ select:hover  option{
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
 .parallax-section button:hover {
   background-color: #573bf2;
 }
 
- 
+
 /* CSS FOR NEXT-CONTENT */
 
 
@@ -446,6 +461,7 @@ select:hover  option{
   padding: 100px 120px 5px 150px;
   justify-content: center;
 }
+
 .next-content h3 {
   font-size: 30px;
   color: #0e1015;
@@ -453,6 +469,7 @@ select:hover  option{
   text-transform: capitalize;
   margin: 0 5px 0px 24px;
 }
+
 .next-content p {
   font-size: 14px;
   color: #8c979e;
@@ -460,6 +477,7 @@ select:hover  option{
   display: flex;
   flex-wrap: wrap;
 }
+
 .next-content button {
   width: 200px;
   padding: 13px 26px;
@@ -472,6 +490,7 @@ select:hover  option{
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
 .next-content button:hover {
   background-color: #573bf2;
 }
@@ -482,13 +501,14 @@ select:hover  option{
 
 .mountain-img {
   width: 100%;
-  padding: 0px 200px 0px 200px;
+  /* padding: 0px 200px 0px 200px; */
   background-color: #f5f5f5;
+  text-align: center;
 }
 
 .mountain-img img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -501,10 +521,12 @@ select:hover  option{
   padding: 25px;
   position: inherit;
 }
+
 .latest-projects h2 {
   color: #fff;
   font-weight: lighter;
 }
+
 .latest-projects p {
   color: #fff;
   margin: 20px;
@@ -524,30 +546,36 @@ select:hover  option{
   /* z-index: 2 ; */
 }
 
-.project-img h2{
- /* color: red; */
- position: absolute;
- /* z-index: 4; */
- margin-top:-110px;
- margin-left: 100px;
- display: none;
+.project-img h2 {
+  /* color: red; */
+  position: absolute;
+  /* z-index: 4; */
+  margin-top: -110px;
+  margin-left: 100px;
+  display: none;
 }
 
-.proimg img:hover{
+.proimg img:hover {
   opacity: 0.5;
 }
-  .proimg:hover h2{
-    animation-name: projectTitle;
-    animation-duration:0.5s; 
-    animation-timing-function: ease;
-    display: block;
+
+.proimg:hover h2 {
+  animation-name: projectTitle;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  display: block;
 }
 
-@keyframes projectTitle{
-  from{
-    margin-top: 0px; margin-left: 100px;}
-    to{
-      margin-top: -110px; margin-left: 100px;    }
+@keyframes projectTitle {
+  from {
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+
+  to {
+    margin-top: -110px;
+    margin-left: 100px;
+  }
 }
 
 
@@ -555,37 +583,37 @@ select:hover  option{
 /* CSS FOR CUSTOMERS */
 
 
-.customer-say{
+.customer-say {
   background-image: url("https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/12/photo-1451417379553-15d8e8f49cde.jpg");
-   /* background: transparent; */
-   width:100%;
-   height: auto;
-   background-attachment: fixed;
-   padding: 20px;
+  /* background: transparent; */
+  width: 100%;
+  height: auto;
+  background-attachment: fixed;
+  padding: 20px;
 }
 
-.customer-say h2{
+.customer-say h2 {
   color: #fff;
   text-transform: capitalize;
   text-align: center;
-  font-weight:lighter;
+  font-weight: lighter;
   padding: 20px;
   align-items: center;
 }
 
 
 
-.customerinfo{
+.customerinfo {
   display: block;
   align-items: center;
   text-align: center;
   padding: 15px;
   /* width: 50%; */
-  height: auto;
+  /* height: auto; */
 }
 
-.customerinfo p{
-  display:flex;
+.customerinfo p {
+  display: flex;
   flex-wrap: wrap;
   color: #fff;
   font: 14px;
@@ -593,24 +621,24 @@ select:hover  option{
   padding: 20px;
 }
 
-.customerinfo img{
+.customerinfo img {
   border-radius: 50%;
   padding: 20px;
 }
 
 
-.wordpress-text{
+.wordpress-text {
   background-color: #f5f5f5;
-  display: flex;  
+  display: flex;
   text-align: center;
   padding: 100px;
 }
 
-.wordpress-text h2{
+.wordpress-text h2 {
   font-size: 30px;
 }
 
-.wordpress-text button{
+.wordpress-text button {
   padding: 10px;
   width: 200px;
   text-transform: uppercase;
@@ -629,238 +657,603 @@ select:hover  option{
 /* CSS FOR FOOTER */
 
 
-.footer{
+.footer {
   width: 100%;
-  height: 20vh;
+  height: auto;
   background-color: #0e1015;
   color: #fff;
-  padding:50px 10px 10px 10px;
+  padding: 50px 10px 10px 10px;
 }
 
-.footer-content{
-  width: 100%  ;
+.footer-content {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
 
-.footer a{
+.footer a {
   text-decoration: none;
   color: #8c979e;
   font-weight: bold;
 }
 
 
-.footer a::active{
+.footer a::active {
   color: #573bf2;
 }
 
-.footer p{
+.footer p {
   font-size: 14px;
   margin-left: 10px;
 }
-.footer-icons{
-  width:100%;
+
+.footer-icons {
+  width: 100%;
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   gap: 15px;
 }
 
- .footer-icons .fa{
+.footer-icons .fa {
   font-size: 20px;
   padding: 5px;
   color: #fff;
 }
 
-.fa:hover{
-  color: #573bf2  ;
+.fa:hover {
+  color: #573bf2;
 }
 
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width:963px){
-  .project-img {
-  width: 100%;
- }
- .project-img img{
-  width: 240px;
- }
-
- /* .mountain-img img{
-  width: ;
- } */
-}
-
-@media screen and (max-width:963px) {
-  .nav-container{
-    width: 110%;
-  }
-
-  .content{
-    width: 70%;
-  }
-  .content h1{
-      font-size: 40px;
-  }
- .seo-friendly, .portfolio{   
-  width: 100% ;
-  text-align: center;
-    /* display: block;  */
- }
- .seo-text{
-   width: 70%;
- }
- .seo-img img, .portfolio-img img{
-  width: 450px;
- }
- .project-img h2{
-  font-size: 15px;
- }
- .project-img img{
-  width:100%;
- }
-}
-
-@media screen and (max-width:935px){
-  .project-img{
-    /* grid-template-columns: auto auto auto; */
-    align-items: center;
-    width: 50%;
-    /* margin-left:110px ; */
-  }
-}
 
 
-@media screen and (max-width:760px){
-  .content h1, .parallax-section h1{
-    font-size: 30px;
+@media screen and (min-width:320px) and (max-width:380px) {
+
+  nav,
+  .nav-container {
+    width: 100%;
+
   }
 
-  .content p, .parallax-section p{
-    font-size: 12px;
-    margin: 0px 100px 10px 100px;
-  }
-  .search-input input{
-    padding: 5px;
-    width: 150px;
-    font-size: medium;
-  }
-  .search-input button{
-    padding: 5px;
-    font-size: 14px;
-  }
-  .content{
-    padding-top: 100px;
-    padding-right: 100px;
-  }
-  .content .readbtn,.content .downloadbtn, .seo-text button,.portfolio-text button, .parallax-section button,.next-content button{
-    width: 150px;
-    padding: 10px 20px;
-    font-size: 12px;
-  }
-
-  .wordpress-text button{
-    font-size:14px;
-    width: 150px;
-    /* padding:5px 10px; */
-  }
-  .seo-text h3, .portfolio-text h3{
-    font-size: 20px;
-  }
-
-  .seo-text p, .portfolio-text p{
-    font-size: 12px;
-  }
-  .seo-img img, .portfolio-img img{
-    width: 300px;
-    margin-top: 100px;
-  }
-  .parallax-section h1{
-    font-size: 40px;
-  }
-  .parallax-section p{
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width:705px){
-  .nav-container{
-    width:100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .proimg img{
-    width: 175px;
-  }
-}
-
-@media screen and (max-width:627px){
-  nav::before{
-    content:"";
-    display: none;
-  }
-
-  
-
-   nav ul{
+  nav ul {
     /* display: grid; */
     display: none;
     position: absolute;
-    background-color:#fff;
+    background-color: #fff;
     margin-top: 30px;
-    margin-left: 100px;
-   }
-  
-  
-   .dropbtn{
+    margin-left: 50px;
+  }
+
+
+  .dropbtn {
     display: block;
-   }
+  }
 
-   nav:hover ul{
-    display:grid;
-   }
+  nav:hover ul {
+    display: grid;
+  }
 
-   .content p, .parallax-section p{
-    margin: 0px 75px 10px 75px;
-   }
-
-   .seo-friendly{
-    padding: 5px;
-   }
-   .seo-text{
-     margin: 0px 0px;
-   }
-   .seo-img{
+  .content,
+  .parallax-section {
+    padding: 0;
     margin: 0;
-   }
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
 
-   .next-content{
-    padding: 75px 95px 2px 120px;
-   }
+  .content h1,
+  .parallax-section h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
 
-  /* .project-img{
-    grid-template-columns: auto auto;
-  } */
-  .proimg img{
+  .content p
+  {
+    font-size: 10px;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+
+    .parallax-section p{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+
+    .content .button-section{
+      margin: 0;
+      padding: 0;
+    }
+  .content .readbtn,
+  .content .downloadbtn,
+  .seo-text button,
+  .portfolio-text button {
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .parallax-section button {
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-left: 120px;
+  }
+
+  .seo-friendly,
+  .portfolio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .seo-text,
+  .portfolio-text {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .seo-text h3,
+  .portfolio-text h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .seo-text p,
+  .portfolio-text p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .seo-img,
+  .portfolio-img,
+  .seo-img img,
+  .portfolio-img img {
     width: 100%;
   }
 
 
-  .wordpress-text h2{
-    font-size: 20px;
+  .project-img {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
   }
-  .wordpress-text button{
-    font-weight: normal;
+
+  .project-img img {
+    width: 100%;
+  }
+
+  .next-content {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .next-content h3 {
+    padding: 0;
+    margin-top: 5px;
+    font-size: 25px;
+  }
+
+  .next-content p {
+    padding: 0;
+    margin-top: 10px;
     font-size: 12px;
-    height: 50px;
+  }
+
+  .next-content button {
+    width: 100px;
+    font-size: 12px;
+    font-weight: lighter;
+    padding: 5px 10px;
+  }
+
+
+  .wordpress-text {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: auto auto;
+    text-align: center;
+  }
+
+  .wordpress-text h2 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 15px;
+  }
+
+  .wordpress-text button {
+    margin-left: 120px;
+    padding: 5px 10px;
+    width: 100px;
+    font-size: 10px;
+    font-weight: lighter;
+  }
+
+  .footer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .footer-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+  }
+
+  .footer-content p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-icons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 5px;
+  }
+
+  .footer-icons .fa {
+    font-size: 15px;
+    padding: 0;
+    margin: 20px;
   }
 }
 
-@media screen and (max-width:570px){
-  /* .project-img{
-    grid-template-columns: auto;
+@media screen and (min-width:380px) and (max-width:780px) {
+
+  /* body{
+    border: 2px solid green;
   } */
-  .proimg img{
-    width:100%;
+
+  nav ul {
+    /* display: grid; */
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 30px;
+    margin-left: 50px;
   }
+
+
+  .dropbtn {
+    display: block;
+  }
+
+  nav:hover ul {
+    display: grid;
+  }
+
+
+  .content,
+  .parallax-section {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+  }
+
+  .content h1,
+  .parallax-section h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content p,
+  .parallax-section p {
+    margin-left: 100px;
+    padding: 0;
+  }
+
+  .content .readbtn,
+  .content .downloadbtn {
+    width: 100px;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .parallax-section button {
+    width: 100px;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-left: 250px;
+  }
+
+  .portfolio-text p {
+    width: 100%;
+  }
+
+  .parallax-section {
+    padding: 0;
+    margin: 0;
+  }
+
+  .seo-friendly,
+  .portfolio {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .seo-img img,
+  .portfolio-img img {
+    width: 100%;
+  }
+
+  .seo-img,
+  .portfolio-img {
+    padding-top: 100px;
+  }
+
+  .seo-text,
+  .portfolio-text {
+    width: 100%;
+    margin: 0;
+  }
+
+  .portfolio-text p {
+    font-size: 14px;
+  }
+
+  .seo-text button,
+  .portfolio-text button {
+    width: 100px;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .parallax-section h1 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .next-content {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .next-content h3 {
+    padding: 0;
+    margin-top: 5px;
+    font-size: 25px;
+  }
+
+  .next-content p {
+    padding: 0;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .next-content button {
+    width: 100px;
+    font-size: 12px;
+    font-weight: lighter;
+    padding: 5px 10px;
+  }
+
+  .mountain-img {
+    width: 100%;
+  }
+
+  .mountain-img img {
+    width: 100%;
+  }
+
+  .project-img {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+  }
+
+  .project-img img {
+    width: 100%;
+  }
+
+  .wordpress-text {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    display: grid;
+    text-align: center;
+    grid-template-rows: auto auto;
+  }
+
+  .wordpress-text button {
+    width: 100px;
+    padding: 5px 10px;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+}
+
+
+@media screen and (min-width:780px) {
+
+  nav,
+  .left-nav,
+  .left-nav span,
+  .right-nav,
+  .seo-friendly,
+  .portfolio {
+    width: 100%;
+  }
+
+
+
+  .seo-img img,
+  .portfolio-img img {
+    width: 100%;
+  }
+
+  .seo-friendly,
+  .seo-text {
+    margin: 0;
+  }
+
+  .content {
+    background-position-x: 100%;
+  }
+
+  .project-img {
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+  }
+
+  .project-img img {
+    width: 100%;
+  }
+
+  .footer-icons {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    position: absolute;
+    right: 50px;
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width:320px) {
+
+  .nav-container,
+  nav {
+    width: 100%;
+  }
+    nav ul {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      margin-top: 30px;
+      margin-left: 50px;
+    }
+  
+  
+    .dropbtn {
+      display: block;
+    }
+  
+    nav:hover ul {
+      display: grid;
+    }
+
+  .content,.parallax-section{
+    width: 100%;
+  }
+  .content h1,.parallax-section h1{
+      font-size: 15px;
+  }
+  .content p,.parallax-section p{
+      font-size: 10px;
+      margin: 5px;
+      padding: 0;
+  }
+  .content .readbtn,.content .downloadbtn,.parallax-section button,.seo-text button,.portfolio-text button,.next-content button{
+      width: 80px;
+      margin: 5px;
+      padding: 0;
+      font-size: 10px;
+  }
+  .seo-friendly,.portfolio{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .seo-text,.portfolio-text{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .seo-text h3,.portfolio-text h3{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  .seo-text p,.portfolio-text p{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .seo-img,.portfolio-img,.seo-img img,.portfolio-img img{
+    width: 100%;
+  }
+
+  .next-content{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-img{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .project-img img{
+    width: 100%;
+  }
+
+  .wordpress-text{
+    width: 100%;
+    display: grid;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .wordpress-text h2{
+    font-size: 13px;
+    margin: 5px;
+  }
+  .wordpress-text button{
+    width: 80px;
+    font-size: 10px;
+    padding:5px 10px;
+    margin:5px 0px 5px 120px;
+    font-weight: normal;
+  }
+     .footer-icons {
+       display: grid;
+       grid-template-columns: auto auto auto auto auto;
+       position: absolute;
+       margin-top: 30px;
+       right: 80px;
+       width: 100%;
+  
+     }
+
+     .footer-icons .fa{
+      font-size: 15px;
+     }
+
 }
